@@ -1,0 +1,5 @@
+@include color-mode(dark) {
+  .swagger-ui {
+    filter: invert(88%) hue-rotate(180deg);
+  }
+}
