@@ -1,5 +1,12 @@
 @include color-mode(dark) {
   .swagger-ui {
     filter: invert(88%) hue-rotate(180deg);
+
+    .table {
+      --#{$prefix}table-bg: inherit;
+      --#{$prefix}table-color: inherit;
+      --#{$prefix}table-hover-bg: var(--#{$prefix}emphasis-color);
+      --#{$prefix}table-hover-color: var(--#{$prefix}body-bg);
+    }
   }
 }
